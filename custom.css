@@ -25,6 +25,8 @@ body {
   border-width: 10px;
   border-top-left-radius: 100px;
   border-top-left-radius: 5px;
+  height: 50%;
+  width: auto;
 }
 
 .panel {
