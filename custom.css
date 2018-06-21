@@ -38,9 +38,9 @@ body {
   border-radius: 25px;
 }
 
-.bookmark-content {
-    background: none repeat scroll 0 0 #FFFFFF;
-    opacity: 0.5;
+.bookmarktxt {
+    background: none repeat scroll 0 0;
+    color: #FFF;
     top: 0;
     left: 0;
     text-align: center;
