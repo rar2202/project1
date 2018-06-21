@@ -1,7 +1,7 @@
 
 body {
   background: #bafff8;
-  font-family: Muli;
+  font-family: Questrial;
   font-size: 20px;
   color: #444;
 }
@@ -25,10 +25,3 @@ body {
   border-width: 5px;
   border-radius: 5px;
 }
-
-.radio-inline {
-  margin-right: 30px;
-  padding-bottom: 30px;
-  font-size: 20px;
-}
-\
