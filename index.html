@@ -19,7 +19,7 @@
     <div class="jumbotron jumbotron-fluid title">
       <h1>Books!</h1>
       <h3>Header</h3>
-      <h4>More info</h4>
+      <h4>Answer some questions below to make a customized bookmark!</h4>
     </div>
 </div>
 
@@ -55,7 +55,7 @@
           <p class="card-text">By ... </p>
           <a href="#" class="btn btn-primary">Go to page on book #2</a>
         </div>
-      </div>
+       </div>
       </div>
       <div class="col-sm-4">
         <div class="card" style="width: 18rem;">
@@ -70,26 +70,29 @@
      </div>
      </div>
 
-    <div class="container container-fluid" class="margin-top">
-      <div class="row">
+  <div class="container">
+    <div class="row">
+     <div class="col-sm-9">
+      <div class="container container-fluid" class="margin-top">
+       <div class="row">
         <div class="col">
-      <h3>Here are some books.</h3>
-      <img src="http://www.flatirondistrict.nyc/uploads/NewsModel/456/image/onebook905x480.detail.jpg" class="img-thumbnail" alt="One NYC One Book">
+        <h3>Here are some books.</h3>
+        <img src="http://www.flatirondistrict.nyc/uploads/NewsModel/456/image/onebook905x480.detail.jpg" class="img-thumbnail" alt="One NYC One Book">
+      </div>
     </div>
-  </div>
 
     <!--Question 1---->
 
     <div class="container container-fluid" class="margin-top">
       <div class="panel panel-primary">
         <div class="panel-heading">Quiz #1</div>
-        <div class="panel-body">
+         <div class="panel-body">
               <h4><span class="label label-info">Which one is your favorite?</span></h4>
-              <label class="radio-inline"><input type="radio" name="radio1" value="betweentheworld" data-correct="treegrows" onclick="question1(event)"> Between the World and Me</label>
-              <label class="radio-inline"><input type="radio" name="radio1" value="thesellout" data-correct="treegrows" onclick="question1(event)">The Sellout</label>
-              <label class="radio-inline"><input type="radio" name="radio1" value="americanah" data-correct="treegrows" onclick="question1(event)">Americanah</label>
-              <label class="radio-inline"><input type="radio" name="radio1" value="treegrows" data-correct="treegrows" onclick="question1(event)">A Tree Grows in Brooklyn</label>
-              <label class="radio-inline"><input type="radio" name="radio1" value="oscarwao" data-correct="treegrows" onclick="question1(event)">The Brief Wondrous Life of Oscar Wao</label>
+              <label class="radio-inline"><input type="radio" name="radio1" value="Between The World and Me" data-correct="A Tree Grows in Brooklyn" onclick="question1(event)"> Between the World and Me</label>
+              <label class="radio-inline"><input type="radio" name="radio1" value="The Sellout" data-correct="A Tree Grows in Brooklyn" onclick="question1(event)">The Sellout</label>
+              <label class="radio-inline"><input type="radio" name="radio1" value="Americanah" data-correct="A Tree Grows in Brooklyn" onclick="question1(event)">Americanah</label>
+              <label class="radio-inline"><input type="radio" name="radio1" value="A Tree Grows in Brooklyn" data-correct="A Tree Grows in Brooklyn" onclick="question1(event)">A Tree Grows in Brooklyn</label>
+              <label class="radio-inline"><input type="radio" name="radio1" value="The Brief Wondrous Life of Oscar Wao" data-correct="A Tree Grows in Brooklyn" onclick="question1(event)">The Brief Wondrous Life of Oscar Wao</label>
       </div>
     </div>
   </div>
@@ -125,10 +128,6 @@
     <button onclick = "bookList()"> Submit </button>
   </div>
 
-  <div>
-    <p id="favBooks"></p>
-  </div>
-
 
    <!--Submit Footer---->
 
@@ -142,6 +141,29 @@
        <div class="input-group-addon"></div>
        <input type="text" class="form-control" placeholder="First Name">
      </div>
+
+     <div class="form-check">
+       <label class="form-check-label">
+         <input class="form-check-input" type="checkbox" id="confirmTerms" required> I agree to the terms & conditions.
+       </label>
+     </div>
+
+     <button type="submit" class="btn btn-primary" onclick="submit()">Submit</button>
+     <p id="submitTxt"></p>
+   </form>
+ </div>
+ </div>
+  <div class="col-sm-3">
+  <div class="thumbnail">
+            <img src="http://www.nsftools.com/misc/BookmarkBackgroundDark.png" alt="bookmark">
+            <div class="caption post-content">
+      <p class="bookmarktxt" id="favBooks"></p> <br>
+    <p class="bookmarktxt" id="nyFav"></p>
+  </div>
+  </div>
+
+
+   <!--Submit Footer---->
 
      <div class="form-check">
        <label class="form-check-label">
