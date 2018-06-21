@@ -1,3 +1,4 @@
+
 body {
   background: #bafff8;
   font-family: Muli;
@@ -18,8 +19,11 @@ body {
   margin-top: 20px;
 }
 
-.li {
+.card {
   margin: 10px;
+  border-color: black;
+  border-width: 5px;
+  border-radius: 5px;
 }
 
 .radio-inline {
@@ -27,7 +31,4 @@ body {
   padding-bottom: 30px;
   font-size: 20px;
 }
-
-.well{
-  padding: 30px;
-}
+\
