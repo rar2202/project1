@@ -1,3 +1,17 @@
+/* One NY Questions */
+function question1(e) {
+  let inputEl = e.currentTarget;
+  let answer = inputEl.value;
+  let correct = inputEl.dataset.correct;
+
+  if (answer === correct) {
+    alert("Wow! That's our favorite book too!");
+
+  }    else {
+      inputEl.parentNode.className = "";
+    }
+  }
+
 /* Short Answer */
 
 function shortAnswer1() {
