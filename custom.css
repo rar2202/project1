@@ -29,6 +29,13 @@ body {
   width: auto;
 }
 
+.img-bookmark {
+  padding: 20px;
+  height: 200px;
+  width: auto;
+  position: relative;
+}
+
 .panel {
   margin-top: 20px;
 }
