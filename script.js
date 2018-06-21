@@ -5,10 +5,10 @@ function question1(e) {
   let correct = inputEl.dataset.correct;
 
   if (answer === correct) {
-    alert("Wow! That's our favorite book too!");
-
-  }    else {
-      inputEl.parentNode.className = "";
+     alert("Wow! That's our favorite book too!")
+     document.getElementById("nyFav").innerHTML = inputEl.value;
+   }  else {
+       document.getElementById("nyFav").innerHTML = inputEl.value;
     }
   }
 
