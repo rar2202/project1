@@ -24,7 +24,7 @@ function shortAnswer1() {
   } else {
     txt = "Your answer is: " + answer;
   }
-  document.getElementById("q2answer").innerHTML = txt;
+  document.getElementById("favQuote").innerHTML = txt;
 }
 
 /* Fav Books List */
