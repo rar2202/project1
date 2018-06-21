@@ -1,3 +1,5 @@
+/* Short Answer */
+
 function shortAnswer1() {
   var txt;
   var answer = prompt(
@@ -11,8 +13,19 @@ function shortAnswer1() {
   document.getElementById("q3answer").innerHTML = txt;
 }
 
-/* Submit All
-*/
+/* Fav Books List */
+
+function bookList() {
+    var x = document.getElementById("bookForm");
+    var txt = "";
+    var i;
+    for (i = 0; i < x.length; i++) {
+        txt = txt + x.elements[i].value + "<br>";
+    }
+    document.getElementById("favBooks").innerHTML = txt;
+}
+
+/* Submit All */
 
 function submit() {
   var submitTxt;
