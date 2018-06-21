@@ -1,5 +1,5 @@
 /* One NY Questions */
-function question1(e) {
+function question1(event) {
   let inputEl = e.currentTarget;
   let answer = inputEl.value;
   let correct = inputEl.dataset.correct;
