@@ -1,0 +1,60 @@
+body {
+  background: #cde2f7 !important;
+  font-family: Muli !important;
+  font-size: 20px !important;
+  color: #444 !important;
+}
+
+.page-header {
+  color: #38267c;
+  font-family: "Bowlby One SC";
+}
+
+.img-thumbnail {
+  padding: 200px;
+}
+
+.panel {
+  margin-top: 20px;
+}
+
+.li {
+  margin: 10px;
+}
+
+.q2correct {
+  color: #22b743;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+.radio-inline {
+  margin-right: 30px;
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+
+.label-lgreen {
+  color: #000 !important;
+  background-color: #8ff442;
+}
+
+.label-dgreen {
+  background-color: #034719;
+}
+
+.label-purple {
+  background-color: #5f0360;
+}
+
+.label-brown {
+  background-color: #776508;
+}
+
+.label-red {
+  background-color: #dd0000;
+}
+
+.select-wrapper {
+  margin: 20px;
+}
