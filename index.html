@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
   <link href='http://fonts.googleapis.com/css?family=Bowlby+One+SC|Muli' rel='stylesheet' type='text/css'>
 </head>
 
@@ -10,8 +11,8 @@
 
   <!--Header-->
 
-  <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
       <h1>Books!</h1>
       <h3>Header</h3>
       <h4>More info</h4>
@@ -78,9 +79,8 @@
 
     <div class="container">
       <div class="panel panel-primary">
-        <div class="panel-heading">Question 2</div>
+        <div class="panel-heading">Quiz #1</div>
         <div class="panel-body">
-          <p>Select the appropriate climate zone for each area on the map.</p>
           <div class="row">
             <div class="col-sm-12">
               <h4><span class="label label-lgreen">Which one is your favorite?</span></h4>
@@ -115,12 +115,26 @@
 
    <!--Submit Footer---->
 
-    <div class="well">
-      <div class="row">
-        <div class="col-sm-10">I agree to the terms of this form. <input id="confirmWork" type="checkbox"></div>
-        <button class="btn btn-success" onclick="submit()">Next Lesson</button>
-      </div>
-    </div>
+   <form class="form-inline">
+     <label for="inlineFormInput">Student ID</label>
+     <input type="text" class="form-control" placeholder="Student ID">
+
+     <label for="inlineFormInputGroup">First Name</label>
+     <div class="input-group">
+       <div class="input-group-addon">@</div>
+       <input type="text" class="form-control" placeholder="First Name">
+     </div>
+
+     <div class="form-check">
+       <label class="form-check-label">
+         <input class="form-check-input" type="checkbox" required> I agree to the terms & conditions.
+       </label>
+     </div>
+
+     <button type="submit" class="btn btn-primary">Submit</button>
+   </form>
+
+     <!--Bootstrap Script---->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
