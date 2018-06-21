@@ -25,14 +25,12 @@ body {
   border-width: 10px;
   border-top-left-radius: 100px;
   border-top-left-radius: 5px;
-  height: 50%;
-  width: auto;
 }
 
 .img-bookmark {
   padding: 20px;
-  height: 200px;
-  width: auto;
+  width: 50%;
+  height: auto;
   position: relative;
 }
 
