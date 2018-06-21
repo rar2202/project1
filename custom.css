@@ -12,7 +12,11 @@ body {
 }
 
 .img-thumbnail {
-  padding: 200px;
+  padding: 20px;
+  border-color: black;
+  border-width: 10px;
+  border-top-left-radius: 100px;
+  border-top-left-radius: 5px;
 }
 
 .panel {
@@ -21,7 +25,7 @@ body {
 
 .card {
   margin: 10px;
-  border-color: black;
-  border-width: 5px;
-  border-radius: 5px;
+  border-color: #effffd;
+  border-width: 3px;
+  border-radius: 25px;
 }
