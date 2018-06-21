@@ -11,6 +11,10 @@ body {
   color: #FFF;
 }
 
+.margin-top {
+  margin-top: 30px;
+}
+
 .img-thumbnail {
   padding: 20px;
   border-color: black;
