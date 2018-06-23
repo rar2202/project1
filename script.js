@@ -17,12 +17,12 @@ function question1(e) {
 function shortAnswer1() {
   var txt;
   var answer = prompt(
-    "Tell us about books?"
+    "A favorite quote for your bookmark: "
   );
   if (answer == null || answer == "") {
-    txt = "Please enter your answer.";
+    txt = "Put your favorite quote here!";
   } else {
-    txt = "Your answer is: " + answer;
+    txt = answer;
   }
   document.getElementById("favQuote").innerHTML = txt;
 }
@@ -45,10 +45,10 @@ function submit() {
   var submitTxt;
   var confirm = document.getElementById("confirmTerms").checked;
   if (confirm == true) {
-    submitTxt = "Submitted!";
+    submitTxt = "Submitted. Your bookmark is ready!";
   } else {
     submitTxt =
-      "Please agree to the terms and conditions.";
+      "Are you sure you're finished?";
   }
-  document.getElementById("submitTxt").innerHTML = (submitTxt);
+  alert(submitTxt);
 }

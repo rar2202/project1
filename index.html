@@ -78,7 +78,7 @@
 
     <div class="container container-fluid margin-top">
       <div class="panel panel-primary">
-        <div class="panel-heading">Quiz #1</div>
+        <div class="panel-heading">Question #1</div>
          <div class="panel-body">
               <h4><span class="label label-info">Which one is your favorite?</span></h4>
               <label class="radio-inline"><input type="radio" name="radio1" value="Between The World and Me" data-correct="A Tree Grows in Brooklyn" onclick="question1(event)"> Between the World and Me</label>
@@ -94,11 +94,11 @@
 
     <div class="container container-fluid margin-top">
       <div class="panel panel-primary">
-        <div class="panel-heading">Question 3</div>
+        <div class="panel-heading">Question #2</div>
         <div class="panel-body">
           <form>
             <div class="col-sm-12">
-              <label for="answer3">What is your favorite book?</label>
+              <label for="answer3">Tell us one of your favorite quotes.</label>
               <input type="button" value="Submit answer here." onclick="shortAnswer1()"></input>
             </div>
           </form>
@@ -130,14 +130,15 @@
        <input type="text" class="form-control" placeholder="First Name">
      </div>
 
+   <div class="row">
      <div class="form-check">
        <label class="form-check-label">
-         <input class="form-check-input" type="checkbox" id="confirmTerms" required> I agree to the terms & conditions.
+         <input class="form-check-input" type="checkbox" id="confirmTerms" required> I'm finished!
        </label>
      </div>
 
      <button type="submit" class="btn btn-primary" onclick="submit()">Submit</button>
-     <p id="submitTxt"></p>
+    </div>
    </form>
  </div>
  </div>
