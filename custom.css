@@ -15,9 +15,6 @@ body {
   text-align: center;
 }
 
-.margin-top {
-  margin-top: 50px;
-}
 
 .img-thumbnail {
   padding: 20px;
@@ -42,6 +39,10 @@ body {
   border-color: #effffd;
   border-width: 3px;
   border-radius: 25px;
+}
+
+.radio-inline {
+  padding-left: 10px;
 }
 
 .bookmarktxt {
