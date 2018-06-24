@@ -7,14 +7,18 @@ body {
 }
 
 .jumbotron {
-  background-color: #101918;
-  color: #FFF;
+  background-image: url("https://lh3.googleusercontent.com/BFrWPfWqQ86wKI0hhR4K_mBhXsKSxtenXVu3se8awg46YkfrKi0ebJOTYfi6n0mvVzkXqlGAy9RUVCXjInjCSB2wlu1P4q_9Q39JzQh7wHaM5Q5mLOKoOuI_DQ1z64aYW5mqqgLF=w2400");
+  color: #1B0D77;
 }
 
 .title {
   text-align: center;
 }
 
+.h1-font {
+  font-size: 60px;
+  font-family: Impact;
+}
 
 .img-thumbnail {
   padding: 20px;
