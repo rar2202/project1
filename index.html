@@ -66,7 +66,7 @@
   <div class="container">
     <div class="row">
      <div class="col-sm-9">
-      <div class="container container-fluid" class="margin-top">
+      <div class="container container-fluid margin-top">
        <div class="row">
         <div class="col">
         <h3>Here are some books.</h3>
@@ -76,9 +76,9 @@
 
     <!--Question 1---->
 
-    <div class="container container-fluid" class="margin-top">
+    <div class="container container-fluid margin-top">
       <div class="panel panel-primary">
-        <div class="panel-heading">Quiz #1</div>
+        <div class="panel-heading">Question #1</div>
          <div class="panel-body">
               <h4><span class="label label-info">Which one is your favorite?</span></h4>
               <label class="radio-inline"><input type="radio" name="radio1" value="Between The World and Me" data-correct="A Tree Grows in Brooklyn" onclick="question1(event)"> Between the World and Me</label>
@@ -92,13 +92,13 @@
 
     <!--Question 2---->
 
-    <div class="container container-fluid" class="margin-top">
+    <div class="container container-fluid margin-top">
       <div class="panel panel-primary">
-        <div class="panel-heading">Question 3</div>
+        <div class="panel-heading">Question #2</div>
         <div class="panel-body">
           <form>
             <div class="col-sm-12">
-              <label for="answer3">What is your favorite book?</label>
+              <label for="answer3">Tell us one of your favorite quotes.</label>
               <input type="button" value="Submit answer here." onclick="shortAnswer1()"></input>
             </div>
           </form>
@@ -109,7 +109,7 @@
 
     <!--Question 3---->
 
-  <div class="container container-fluid" class="margin-top">
+  <div class="container container-fluid margin-top">
     <form id="bookForm">
       List your favorite books here: <br>
       <input type="text"><br>
@@ -123,25 +123,22 @@
 
    <!--Submit Footer---->
 
-<div class="container container-fluid" class="margin-top">
-   <form class="form-inline">
-     <label for="inlineFormInput">Student ID</label>
-     <input type="text" class="form-control" placeholder="Student ID">
-
+  <div class="container container-fluid margin-top">
      <label for="inlineFormInputGroup">First Name</label>
      <div class="input-group">
        <div class="input-group-addon"></div>
        <input type="text" class="form-control" placeholder="First Name">
      </div>
 
+   <div class="row">
      <div class="form-check">
        <label class="form-check-label">
-         <input class="form-check-input" type="checkbox" id="confirmTerms" required> I agree to the terms & conditions.
+         <input class="form-check-input" type="checkbox" id="confirmTerms" required> I'm finished!
        </label>
      </div>
 
      <button type="submit" class="btn btn-primary" onclick="submit()">Submit</button>
-     <p id="submitTxt"></p>
+    </div>
    </form>
  </div>
  </div>
@@ -149,16 +146,29 @@
   <!--Bookmark---->
 
   <div class="col-sm-3">
-  <div class="img-bookmark">
-            <img src="http://static.wixstatic.com/media/e9b64f_1fc9cc0a83e34c8eaae2f87ca103ac77~mv2.png/v1/fill/w_175,h_344,al_c,usm_0.66_1.00_0.01/e9b64f_1fc9cc0a83e34c8eaae2f87ca103ac77~mv2.png" alt="bookmark">
-            <div class="caption post-content">
-              <ul>
-              <li class="bookmarktxt">Books I Love:</li>
-              <li class="bookmarktxt" id="favBooks"></li>
-              <li class="bookmarktxt" id="favQuote"></li>
-              <li class="bookmarktxt" id="nyFav"></li>
-              </ul>
-  </div>
+    <div class="img-bookmark">
+            <img src="https://www.picpng.com/images/large/the-ribbon-bookmark-download-png-85465" alt="bookmark">
+            <div class="caption post-content bookmarktxt">
+              <div class="table table-condensed">
+                <thead>
+                  <tr>
+                    <th>Books I Love</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th id="favBooks"></th>
+                  </tr>
+                  <tr>
+                    <th id="favQuote"></th>
+                  </tr>
+                  <tr>
+                    <th id="nyFav"></th>
+                  </tr>
+                </tbody>
+              </div>
+            </div>
+        </div>
   </div>
 
 
