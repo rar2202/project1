@@ -60,3 +60,7 @@ body {
   position: absolute;
   margin: 6rem;
 }
+
+.input-group{
+  padding: .5rem;
+}
