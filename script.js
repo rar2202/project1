@@ -1,3 +1,5 @@
+var bookmarkInfo = []
+
 /* One NY Questions */
 function question1(e) {
   let inputEl = e.currentTarget;
@@ -6,10 +8,12 @@ function question1(e) {
 
   if (answer === correct) {
      alert("Wow! That's our favorite book too!")
-     document.getElementById("radio1").innerHTML = inputEl.value;
+     bookmarkInfo.push("inputEl.value");
+     /*document.getElementById("radio1").innerHTML = inputEl.value;*/
    }  else {
     alert("Wow - we're glad you've read it")
-       document.getElementById("radio1").innerHTML = inputEl.value;
+        bookmarkInfo.push("inputEl.value");
+       /*document.getElementById("radio1").innerHTML = inputEl.value;*/
     }
   }
 
@@ -25,7 +29,8 @@ function shortAnswer1() {
   } else {
     txt = answer;
   }
-  document.getElementById("favQuote").innerHTML = txt;
+  bookmarkInfo.push(txt);
+  /*document.getElementById("favQuote").innerHTML = txt;*/
 }
 
 function shortAnswer2() {
@@ -38,7 +43,9 @@ function shortAnswer2() {
   } else {
     txt = answer;
   }
-  document.getElementById("favSummary").innerHTML = txt;
+  bookmarkInfo.push(txt);
+  /*
+  document.getElementById("favSummary").innerHTML = txt;*/
 }
 
 /* Fav Books List */
@@ -50,7 +57,8 @@ function bookList() {
     for (i = 0; i < x.length; i++) {
         txt = txt + x.elements[i].value + "<br>";
     }
-    document.getElementById("favBooks").innerHTML = txt;
+    bookmarkInfo.push(txt);
+    /*document.getElementById("favBooks").innerHTML = txt;*/
 }
 
 /* Submit All */
@@ -65,6 +73,7 @@ function submit() {
       "Are you sure you're finished?";
   }
   alert(submitTxt);
+  document.getElementById("bookmarkInfo").innerHTML = bookmarkInfo;
 }
 
 /* Americanah Question (4)*/
@@ -81,6 +90,3 @@ function question4(e) {
       document.getElementById("radio2").innerHTML = inputEl.value;
     }
   }
-
-
-
