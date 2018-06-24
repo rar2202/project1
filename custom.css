@@ -32,6 +32,8 @@ body {
 
 .img-bookmark {
   position: relative;
+  height: 50rem;
+  width: 20rem;
 }
 
 .panel {
@@ -52,7 +54,7 @@ body {
 .bookmarktxt {
   background: none repeat scroll 0 0;
   color: #FFF;
-  font-size: 5rem;
+  font-size: 2rem;
   font-family: Oswald;
   top: 0;
   left: 0;
