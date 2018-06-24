@@ -50,10 +50,13 @@ body {
 }
 
 .bookmarktxt {
-    background: none repeat scroll 0 0;
-    color: #FFF;
-    top: 0;
-    left: 0;
-    text-align: center;
-    position: absolute;
+  background: none repeat scroll 0 0;
+  color: #FFF;
+  font-size: 5rem;
+  font-family: Oswald;
+  top: 0;
+  left: 0;
+  text-align: center;
+  position: absolute;
+  margin: 6rem;
 }
