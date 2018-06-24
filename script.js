@@ -28,6 +28,18 @@ function shortAnswer1() {
   document.getElementById("favQuote").innerHTML = txt;
 }
 
+function shortAnswer2() {
+  var txt;
+  var answer = prompt(
+    "Write a brief summary of your favorite story: "
+  );
+  if (answer == null || answer == "") {
+    txt = "Please write your summary here";
+  } else {
+    txt = answer;
+  }
+  document.getElementById("favSummary").innerHTML = txt;
+}
 
 /* Fav Books List */
 
@@ -69,3 +81,6 @@ function question4(e) {
       document.getElementById("radio2").innerHTML = inputEl.value;
     }
   }
+
+
+
