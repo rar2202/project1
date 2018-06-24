@@ -6,9 +6,10 @@ function question1(e) {
 
   if (answer === correct) {
      alert("Wow! That's our favorite book too!")
-     document.getElementById("nyFav").innerHTML = inputEl.value;
+     document.getElementById("radio1").innerHTML = inputEl.value;
    }  else {
-       document.getElementById("nyFav").innerHTML = inputEl.value;
+    alert("Wow - we're glad you've read it")
+       document.getElementById("radio1").innerHTML = inputEl.value;
     }
   }
 
@@ -26,6 +27,7 @@ function shortAnswer1() {
   }
   document.getElementById("favQuote").innerHTML = txt;
 }
+
 
 /* Fav Books List */
 
@@ -52,3 +54,18 @@ function submit() {
   }
   alert(submitTxt);
 }
+
+/* Americanah Question (4)*/
+function question4(e) {
+  let inputEl = e.currentTarget;
+  let answer = inputEl.value;
+  let correct = inputEl.dataset.correct;
+
+  if (answer === correct) {
+     alert("Great! Tell us what you thought below!")
+     document.getElementById("radio2").innerHTML = inputEl.value;
+   }  else {
+      alert ("Try it out - it's a great story!")
+      document.getElementById("radio2").innerHTML = inputEl.value;
+    }
+  }
