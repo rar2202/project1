@@ -8,13 +8,12 @@ function question1(e) {
 
   if (answer === correct) {
      alert("Wow! That's our favorite book too!")
-     bookmarkInfo.push("inpuetEl.value");
-     /*
-     document.getElementById("radio1").innerHTML = inputEl.value;*/
+     /*bookmarkInfo.push("inputEl.value");*/
+     document.getElementById("radio1").innerHTML = inputEl.value;
    }  else {
     alert("Wow - we're glad you've read it")
-        bookmarkInfo.push("inputEl.value");
-       /*document.getElementById("radio1").innerHTML = inputEl.value;*/
+        /*bookmarkInfo.push("inputEl.value");*/
+       document.getElementById("radio1").innerHTML = inputEl.value;
     }
   }
 
@@ -30,7 +29,7 @@ function shortAnswer1() {
   } else {
     txt = answer;
   }
-  bookmarkInfo.push(txt);
+  /*bookmarkInfo.push(txt);*/
   /*document.getElementById("favQuote").innerHTML = txt;*/
 }
 
@@ -44,7 +43,7 @@ function shortAnswer2() {
   } else {
     txt = answer;
   }
-  bookmarkInfo.push(txt);
+  /*bookmarkInfo.push(txt);*/
   /*
   document.getElementById("favSummary").innerHTML = txt;*/
 }
@@ -58,8 +57,8 @@ function bookList() {
     for (i = 0; i < x.length; i++) {
         txt = txt + x.elements[i].value + "<br>";
     }
-    bookmarkInfo.push(txt);
-    /*document.getElementById("favBooks").innerHTML = txt;*/
+    /*bookmarkInfo.push(txt);*/
+    document.getElementById("favBooks").innerHTML = txt;
 }
 
 /* Submit All */
@@ -74,7 +73,7 @@ function submit() {
       "Are you sure you're finished?";
   }
   alert(submitTxt);
-  document.getElementById("favBooks").innerHTML = bookmarkInfo;
+  document.getElementById("bookmarkInfo").innerHTML = bookmarkInfo;
 }
 
 /* Americanah Question (4)*/
