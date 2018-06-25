@@ -14,6 +14,7 @@
 
     <div class="jumbotron jumbotron-fluid title">
       <h1 class="h1-font">Create Your Own Book Review</h1>
+      <h1 id="bookTitle"></h1>
     </div>
 </div>
 
@@ -24,35 +25,58 @@
       <div class="row">
         <div class="col-sm-4">
           <div>
-          <img id="bookImage" class="card-img-top" src="images/Sellout.jpg">
+          <img id="bookImage" class="card-img-top" src="https://www.clker.com/cliparts/3/3/7/4/1194985944982530750book_01.svg">
           </div>
         </div>
-      <div class="col-sm-8">
-        <div class="card" style="width: responsive;">
-          <div class="card-body">
-          <h5 class="card-title">Book Summary</h5>
-          <p class="card-text">
-            <p id="favSummary"><p>
+
+        <div class="col-sm-8">
+          <div class="card" style="width: responsive;">
+            <div class="card-body">
+              <p class="card-text">
+              <input type="button" value="Book Title" onclick="shortAnswer5()"></input>
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: responsive;">
+            <div class="card-body">
+              <h5 class="card-title"><b><u>Book Summary</u></b></h5>
+              <p class="card-text">
+              <p id="favSummary"></p>
               <input type="button" value="Submit Your Summary" onclick="shortAnswer2()"></input>
-            </p>
+              </p>
+            </div>
+          </div>
 
-						<input id="imageURLInput" type="text" placeholder="Find an image URL">
-						<button type="button" onclick="updateImage();">CHANGE IMAGE</button>
-
+          <div class="card" style="width: responsive;">
+            <div class="card body">
+              <input id="imageURLInput" type="text" placeholder="Find an image URL">
+              <button type="button" onclick="updateImage();">Replace Image</button>
+            </div>
+          </div>
         </div>
-       </div>
       </div>
     </div>
-  </div>
 
+</br>
 
-  <div class="container">
+  <div class="container container-fluid margin-top">
     <div class="row">
-     <div class="col-sm-12">
-      <div class="container container-fluid margin-top">
-        <h3>The Sellout - 1 Minute Book Review</h3>
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/omLvcebr5bI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <h3>Add Your Book Trailer</h3>
+       <iframe id="videoURL" width="560" height="315" src="https://www.youtube.com/embed/VcUApeCX4Gs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <input id="videoURLInput" type="text" placeholder="Find an embed video URL">
+        <button type="button" onclick="updateVideo();">Replace Video</button>
         </div>
+        <div class="col-sm-3"></div>
+      </div>
+    </div>
+
+    <div class="container container-fluid margin-top">
+    <div class="row">
+      <div class="col-sm-12">
+        <a href="index.html" target="_blank"><button onclick()> Back to homepage</button></a>
       </div>
     </div>
   </div>
