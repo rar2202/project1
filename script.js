@@ -1,3 +1,6 @@
+
+
+
 /* One NY Questions */
 function question1(e) {
   let inputEl = e.currentTarget;
@@ -125,7 +128,8 @@ function question4(e) {
     let name = document.getElementById("nameInput").value;
     document.getElementById("userName").innerHTML = "This is " + "\n"  + name + "'s" + "\n" + "bookmark'";
   }
-
+  
+/*
   function color() {
     var txtcolor;
     inputEl = e.currentTarget;
