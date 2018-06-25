@@ -126,6 +126,13 @@ function question4(e) {
     document.getElementById("userName").innerHTML = "This is " + "\n"  + name + "'s" + "\n" + "bookmark'";
   }
 
+  function color() {
+    var txtcolor;
+    inputEl = e.currentTarget;
+    let txtcolor = inputEl.value;
+    document.getElementById("bookmarktxt").style.color = txtcolor;
+  }
+
 /* Color Picker at
   $(".basic").spectrum({
       color: "#f00",
