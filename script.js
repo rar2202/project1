@@ -74,7 +74,7 @@ function bookList() {
         txt = txt + x.elements[i].value + "<br>";
 				userResponses.otherBooks.push(x.elements[i].value);
     }
-    document.getElementById("favBooks").innerHTML = "My favorite books are " + txt;
+    document.getElementById("favBooks").innerHTML = txt;
 }
 
 /* Write your Own Summary Functions*/
