@@ -51,6 +51,11 @@ function shortAnswer1() {
   document.getElementById("favQuote").innerHTML = txt;
 }
 
+function updateImage() {
+	let url = document.querySelector('#imageURLInput').value;
+	document.querySelector('#bookImage').src = url;
+}
+
 function shortAnswer2() {
   var txt;
   var answer = prompt(
