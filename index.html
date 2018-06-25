@@ -95,7 +95,7 @@
   <div class="container container-fluid margin-top">
     <div class="row">
       <div class="col-xs-6">
-        <div class="panel panel-primary">
+        <div class="panel panel-info">
           <div class="panel-heading"><b>Question #1</b></div>
             <div class="panel-body">
               <h4><span class="label label-info">Which one is your favorite?</span></h4>
@@ -106,34 +106,20 @@
               <p><label class="radio-inline"><input type="radio" name="radio1" value="The Brief Wondrous Life of Oscar Wao" data-correct="A Tree Grows in Brooklyn" onclick="question1(event)">The Brief Wondrous Life of Oscar Wao</label></p>
             </div>
         </div>
-      </div>
-    </div>
-  </div>
 
     <!--Question 2---->
-
-  <div class="container container-fluid margin-top">
-    <div class="row">
-      <div class="panel panel-primary">
+      <div class="panel panel-info margin-top">
         <div class="panel-heading"><b>Question #2</b></div>
           <div class="panel-body">
             <form>
-              <div class="col-sm-12">
                 <label>Tell us one of your favorite quotes.</label>
                 <input type="button" value="Submit answer here." onclick="shortAnswer1()"></input>
-              </div>
             </form>
           </div>
       </div>
-    </div>
-  </div>
 
     <!--Question 3---->
-
-  <div class="container container-fluid margin-top">
-    <div class="row">
-      <div class="col-sm-3">
-        <div class="panel panel-primary">
+        <div class="panel panel-info margin-top">
           <div class="panel-heading"><b>Question #3</b></div>
             <form id="bookForm">List your favorite books here: <br>
               <input type="text"><br>
@@ -143,23 +129,17 @@
             </form>
             <button class-"btn btn-info" onclick = "bookList()"> Enter your favorite books. </button>
         </div>
-      </div>
-    </div>
-  </div>
 
 
    <!--Submit Footer---->
-
-  <div class="container container-fluid margin-top">
-    <div class="row">
-      <div class="col-sm-3">
+      <div class="col-xs-3">
         <div class="input-group">
           <div class="input-group-addon"></div>
           <input type="text" class="form-control" placeholder="First Name">
         </div>
       </div>
 
-      <div class="col-sm-3">
+      <div class="col-xs-3">
         <div class="form-check">
           <label class="form-check-label">
             <input class="form-check-input" type="checkbox" id="confirmTerms"> I'm finished!
@@ -167,43 +147,39 @@
         </div>
       </div>
 
-      <div class="col-sm-3">
+      <div class="col-xs-3">
         <button type="submit" class="btn btn-primary" onclick="submit()">Submit</button>
       </div>
-    </div>
-  </div>
+     </div>
+
 
   <!--Bookmark---->
 
-  <div class="container container-fluid margin-top">
-    <div class="row">
-      <div class="col-sm-3">
+      <div class="col-sm-6">
         <div>
         <img class="img-bookmark" src="https://www.picpng.com/images/large/the-ribbon-bookmark-download-png-85465" alt="bookmark">
           <div class="caption post-content bookmarktxt">
-            <div class="table table-condensed">
-              <thead>
-                <tr>
-                  <th>Books I Love</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <p id="favBooks"></p>
-                </tr>
-                <tr>
-                  <p id="favQuote"><p>
-                </tr>
-                <tr>
-                  <p id="radio1"></p>
-                </tr>
-              </tbody>
-            </div>
+
+						<div class="bookResponses">
+							<h2>My Fav Book</h2>
+							<div id="radio1">
+								<!-- STUFF -->
+							</div>
+
+							<h2>My Fav Quote</h2>
+							<div id="favQuote">
+								<!-- STUFF -->
+							</div>
+							<div id="favBooks">
+								<!-- STUFF -->
+							</div>
+						</div>
+
           </div>
         </div>
       </div>
-    </div>
   </div>
+ </div>
 
   <script src="script.js"></script>
 

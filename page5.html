@@ -24,7 +24,7 @@
       <div class="row">
         <div class="col-sm-4">
           <div>
-          <img class="card-img-top" src="images/Sellout.jpg">
+          <img id="bookImage" class="card-img-top" src="images/Sellout.jpg">
           </div>
         </div>
       <div class="col-sm-8">
@@ -33,14 +33,18 @@
           <h5 class="card-title">Book Summary</h5>
           <p class="card-text">
             <p id="favSummary"><p>
-              <input type="button" value="Submit Your Summary" onclick="shortAnswer2()"></input> 
+              <input type="button" value="Submit Your Summary" onclick="shortAnswer2()"></input>
             </p>
+
+						<input id="imageURLInput" type="text" placeholder="Find an image URL">
+						<button type="button" onclick="updateImage();">CHANGE IMAGE</button>
+
         </div>
        </div>
       </div>
     </div>
   </div>
-        
+
 
   <div class="container">
     <div class="row">
