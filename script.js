@@ -105,3 +105,24 @@ function question4(e) {
       document.getElementById("radio2").innerHTML = inputEl.value;
     }
   }
+
+/* Submit Bookmark and Name*/
+  function submit() {
+    var txt;
+    var confirm = document.getElementById("confirmWork").checked;
+    if (confirm == true) {
+      txt = "Your bookmark is ready!";
+    } else {
+      txt =
+        "Are you finished?";
+    }
+    alert(txt);
+    name();
+  }
+
+  name() {
+    var name;
+    let document.getElementById("nameInput").value = name;
+
+    document.getElementById("userName").innerHTML = name;
+  }
