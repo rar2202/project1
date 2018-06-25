@@ -35,8 +35,7 @@ function question1(e) {
     }
   }
 
-/* Short Answer */
-
+/* Short Answer - Index*/
 function shortAnswer1() {
   var txt;
   var answer = prompt(
@@ -51,9 +50,42 @@ function shortAnswer1() {
   document.getElementById("favQuote").innerHTML = txt;
 }
 
+/* Short Answer - Page 2/3/4*/
+function shortAnswer3() {
+  var txt;
+  var answer = prompt(
+    "Provide your book feedback"
+  );
+  if (answer == null || answer == "") {
+    txt = "Please share your feedback";
+  } else {
+    txt = "Thank you! Your feedback is greatly appreciated!";
+  }
+  document.getElementById("feedback1").innerHTML = txt;
+}
+
+/* Short Answers - Page 5*/
+function shortAnswer5() {
+  var txt;
+  var answer = prompt(
+    "Provide the title of the book you are reviewing:"
+  );
+  if (answer == null || answer == "") {
+    txt = "Please provide the book title";
+  } else {
+    txt = answer;
+  }
+  document.getElementById("bookTitle").innerHTML = txt;
+}
+
 function updateImage() {
-	let url = document.querySelector('#imageURLInput').value;
-	document.querySelector('#bookImage').src = url;
+  let url = document.querySelector('#imageURLInput').value;
+  document.querySelector('#bookImage').src = url;
+}
+
+function updateVideo() {
+  let url = document.querySelector('#videoURLInput').value;
+  document.querySelector('#videoURL').src = url;
 }
 
 function shortAnswer2() {
@@ -66,12 +98,10 @@ function shortAnswer2() {
   } else {
     txt = answer;
   }
-  /*bookmarkInfo.push(txt);*/
   document.getElementById("favSummary").innerHTML = txt;
 }
 
 /* Fav Books List */
-
 function bookList() {
     var x = document.getElementById("bookForm");
     var txt = "";
@@ -82,21 +112,6 @@ function bookList() {
     }
     /*bookmarkInfo.push(txt);*/
     document.getElementById("favBooks").innerHTML = txt;
-}
-
-/* Submit All */
-
-function submit() {
-  var submitTxt;
-  var confirm = document.getElementById("confirmTerms").checked;
-  if (confirm == true) {
-    submitTxt = "Submitted. Your bookmark is ready!";
-  } else {
-    submitTxt =
-      "Are you sure you're finished?";
-  }
-  alert(submitTxt);
-  document.getElementById("bookmarkInfo").innerHTML = bookmarkInfo;
 }
 
 /* Americanah Question (4)*/
