@@ -1,4 +1,22 @@
-var bookmarkInfo = []
+var bookmarkInfo = [
+	"FAV BOOK",
+	"Some QUOTE",
+	["a","b","c","d"]
+];
+
+var userResponses = {
+	favBook: "",
+	favQuote: "",
+	otherBooks: []
+};
+
+// userResponses.favBook;
+// userResponses.favQuote;
+
+for (let book of userResponses.otherBooks) {
+	alert(book);
+}
+
 
 /* One NY Questions */
 function question1(e) {
@@ -55,6 +73,7 @@ function bookList() {
     var i;
     for (i = 0; i < x.length; i++) {
         txt = txt + x.elements[i].value + "<br>";
+				userResponses.otherBooks.push(x.elements[i].value);
     }
     /*bookmarkInfo.push(txt);*/
     document.getElementById("favBooks").innerHTML = txt;
