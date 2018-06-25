@@ -1,23 +1,3 @@
-var bookmarkInfo = [
-	"FAV BOOK",
-	"Some QUOTE",
-	["a","b","c","d"]
-];
-
-var userResponses = {
-	favBook: "",
-	favQuote: "",
-	otherBooks: []
-};
-
-// userResponses.favBook;
-// userResponses.favQuote;
-
-for (let book of userResponses.otherBooks) {
-	alert(book);
-}
-
-
 /* One NY Questions */
 function question1(e) {
   let inputEl = e.currentTarget;
@@ -26,12 +6,10 @@ function question1(e) {
 
   if (answer === correct) {
      alert("Wow! That's our favorite book too!")
-     /*bookmarkInfo.push("inputEl.value")*/
-     document.getElementById("radio1").innerHTML = inputEl.value;
+     document.getElementById("radio1").innerHTML = "Ask me about " + inputEl.value + "!";
    }  else {
     alert("Wow - we're glad you've read it")
-        /*bookmarkInfo.push("inputEl.value");*/
-       document.getElementById("radio1").innerHTML = inputEl.value;
+       document.getElementById("radio1").innerHTML = "Ask me about " + inputEl.value + "!";
     }
   }
 
@@ -46,18 +24,17 @@ function shortAnswer1() {
   } else {
     txt = answer;
   }
-  /*bookmarkInfo.push(txt);*/
-  document.getElementById("favQuote").innerHTML = txt;
+  document.getElementById("favQuote").innerHTML = "My favorite literary quote is '" + txt + "'.";
 }
 
 /* Short Answer - Page 2/3/4*/
 function shortAnswer3() {
   var txt;
   var answer = prompt(
-    "Provide your book feedback"
+    "Provide your book feedback."
   );
   if (answer == null || answer == "") {
-    txt = "Please share your feedback";
+    txt = "Please share your feedback.";
   } else {
     txt = "Thank you! Your feedback is greatly appreciated!";
   }
@@ -71,7 +48,7 @@ function shortAnswer5() {
     "Provide the title of the book you are reviewing:"
   );
   if (answer == null || answer == "") {
-    txt = "Please provide the book title";
+    txt = "Please provide the book title.";
   } else {
     txt = answer;
   }
@@ -88,6 +65,19 @@ function updateVideo() {
   document.querySelector('#videoURL').src = url;
 }
 
+/* Fav Books List */
+function bookList() {
+    var x = document.getElementById("bookForm");
+    var txt = "";
+    var i;
+    for (i = 0; i < x.length; i++) {
+        txt = txt + x.elements[i].value + "<br>";
+				userResponses.otherBooks.push(x.elements[i].value);
+    }
+    document.getElementById("favBooks").innerHTML = "My favorite books are " + txt;
+}
+
+/* Write your Own Summary Functions*/
 function shortAnswer2() {
   var txt;
   var answer = prompt(
@@ -99,19 +89,6 @@ function shortAnswer2() {
     txt = answer;
   }
   document.getElementById("favSummary").innerHTML = txt;
-}
-
-/* Fav Books List */
-function bookList() {
-    var x = document.getElementById("bookForm");
-    var txt = "";
-    var i;
-    for (i = 0; i < x.length; i++) {
-        txt = txt + x.elements[i].value + "<br>";
-				userResponses.otherBooks.push(x.elements[i].value);
-    }
-    /*bookmarkInfo.push(txt);*/
-    document.getElementById("favBooks").innerHTML = txt;
 }
 
 /* Americanah Question (4)*/

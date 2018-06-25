@@ -51,6 +51,10 @@ body {
   padding-left: 10px;
 }
 
+.q3txt {
+  padding-left: 5px;
+}
+
 .bookmarktxt {
   background: none repeat scroll 0 0;
   color: #FFF;
