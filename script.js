@@ -106,6 +106,7 @@ function question4(e) {
     }
   }
 
+
 /* Submit Bookmark and Name*/
   function submit() {
     var txt;
@@ -118,11 +119,18 @@ function question4(e) {
     }
     alert(txt);
     name();
+    color();
   }
 
-  name() {
+function color() {
+  var color;
+  let color = document.getElementById("colorInput").value;
+  document.getElementById("").style.color = "magenta";
+}
+
+  function name() {
     var name;
-    let document.getElementById("nameInput").value = name;
+    let name = document.getElementById("nameInput").value;
 
     document.getElementById("userName").innerHTML = "This is " + "\n"  + name + "'s" + "\n" + "bookmark'";
   }
