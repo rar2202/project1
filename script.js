@@ -119,14 +119,7 @@ function question4(e) {
     }
     alert(txt);
     name();
-    color();
   }
-
-function color() {
-  var color;
-  let color = document.getElementById("colorInput").value;
-  document.getElementById("").style.color = "magenta";
-}
 
   function name() {
     var name;
@@ -134,3 +127,11 @@ function color() {
 
     document.getElementById("userName").innerHTML = "This is " + "\n"  + name + "'s" + "\n" + "bookmark'";
   }
+
+/* Color Picker at */
+  $(".basic").spectrum({
+      color: "#f00",
+      change(function () {
+    var color = $(this).val()
+    $('#selectBox').css('color', color);
+});

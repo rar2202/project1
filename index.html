@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="custom.css">
+  <link rel='stylesheet' href='spectrum.css' />
   <link href='https://fonts.googleapis.com/css?family=Questrial|Oswald' rel='stylesheet' type='text/css'>
 </head>
 
@@ -123,17 +124,15 @@
               <input type="text">
               <input type="text">
             </form>
-            <button class-"btn btn-info" onclick = "bookList()"> Enter these books onto your bookmark. </button>
+            <button class-"btn btn-info" onclick="bookList()"> Enter these books onto your bookmark. </button>
         </div>
 
 
       <!--Color Picker Code by jscolor---->
         <div class="panel panel-info margin-top">
           <div class="panel-heading"><b>Change the color of your bookmark text!</b></div>
-          <p>Use a <a href="http://www.color-hex.com/">hex color picker</a> to find the right color.</p>
-          <div class="input-group-addon"></div>
-          <label for="colorInput">#</label>
-          <input type="text" class="form-control" id="colorInput">
+          <input type='text' class="basic"/>
+          <em id='basic-log'></em>
         </div>
 
 
@@ -183,7 +182,7 @@
  </div>
 
   <script src="script.js"></script>
-  <script src="jscolor.js"></script>
+  <script src='spectrum.js'></script>
 
 </body>
 </html>
