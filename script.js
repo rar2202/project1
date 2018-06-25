@@ -118,20 +118,18 @@ function question4(e) {
         "Are you finished?";
     }
     alert(txt);
-    name();
   }
 
   function name() {
     var name;
     let name = document.getElementById("nameInput").value;
-
     document.getElementById("userName").innerHTML = "This is " + "\n"  + name + "'s" + "\n" + "bookmark'";
   }
 
-/* Color Picker at */
+/* Color Picker at
   $(".basic").spectrum({
       color: "#f00",
       change(function () {
     var color = $(this).val()
     $('#selectBox').css('color', color);
-});
+});*/
