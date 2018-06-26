@@ -1,4 +1,3 @@
-
 /* One NY Questions */
 function question1(e) {
   let inputEl = e.currentTarget;
@@ -6,13 +5,13 @@ function question1(e) {
   let correct = inputEl.dataset.correct;
 
   if (answer === correct) {
-     alert("Wow! That's our favorite book too!")
-     document.getElementById("radio1").innerHTML = "Ask me about " + inputEl.value + "!";
-   }  else {
+    alert("Wow! That's our favorite book too!")
+    document.getElementById("radio1").innerHTML = "Ask me about " + inputEl.value + "!";
+  } else {
     alert("Wow - we're glad you've read it")
-       document.getElementById("radio1").innerHTML = "Ask me about " + inputEl.value + "!";
-    }
+    document.getElementById("radio1").innerHTML = "Ask me about " + inputEl.value + "!";
   }
+}
 
 /* Short Answer - Index*/
 function shortAnswer1() {
@@ -68,13 +67,13 @@ function updateVideo() {
 
 /* Fav Books List */
 function bookList() {
-    var x = document.getElementById("bookForm");
-    var txt = "";
-    var i;
-    for (i = 0; i < x.length; i++) {
-        txt = txt + x.elements[i].value + "<br>";
-    }
-    document.getElementById("favBooks").innerHTML = "I highly recommend " + "\n" + txt;
+  var x = document.getElementById("bookForm");
+  var txt = "";
+  var i;
+  for (i = 0; i < x.length; i++) {
+    txt = txt + x.elements[i].value + "<br>";
+  }
+  document.getElementById("favBooks").innerHTML = "I highly recommend " + "\n" + txt;
 }
 
 /* Write your Own Summary Functions*/
@@ -98,27 +97,27 @@ function question4(e) {
   let correct = inputEl.dataset.correct;
 
   if (answer === correct) {
-     alert("Great! Tell us what you thought below!")
-     document.getElementById("radio2").innerHTML = inputEl.value;
-   }  else {
-      alert ("Try it out - it's a great story!")
-      document.getElementById("radio2").innerHTML = inputEl.value;
-    }
+    alert("Great! Tell us what you thought below!")
+    document.getElementById("radio2").innerHTML = inputEl.value;
+  } else {
+    alert("Try it out - it's a great story!")
+    document.getElementById("radio2").innerHTML = inputEl.value;
   }
+}
 
 
 /* Submit Bookmark and Name*/
-  function submit() {
-    var txt;
-    var confirm = document.getElementById("confirmTerms").checked;
-    if (confirm == true) {
-      txt = "Your bookmark is ready!";
-    } else {
-      txt =
-        "Are you finished?";
-    }
-    alert(txt);
+function submit() {
+  var txt;
+  var confirm = document.getElementById("confirmTerms").checked;
+  if (confirm == true) {
+    txt = "Your bookmark is ready!";
+  } else {
+    txt =
+      "Are you finished?";
   }
+  alert(txt);
+}
 
 /*
   function color() {

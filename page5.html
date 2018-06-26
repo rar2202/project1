@@ -1,79 +1,80 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="custom.css">
   <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
-  </head>
+</head>
 
 <body>
 
   <!--Header-->
 
-    <div class="jumbotron jumbotron-fluid title">
-      <h1 class="h1-font">Create Your Own Book Review</h1>
-      <h1 id="bookTitle"></h1>
-    </div>
-</div>
+  <div class="jumbotron jumbotron-fluid title">
+    <h1 class="h1-font">Create Your Own Book Review</h1>
+    <h1 id="bookTitle"></h1>
+  </div>
+  </div>
 
 
   <!--Main Information-->
 
-    <div class="container container-fluid">
-      <div class="row">
-        <div class="col-sm-4">
-          <div>
+  <div class="container container-fluid">
+    <div class="row">
+      <div class="col-sm-4">
+        <div>
           <img id="bookImage" class="card-img-top" src="https://www.clker.com/cliparts/3/3/7/4/1194985944982530750book_01.svg">
+        </div>
+      </div>
+
+      <div class="col-sm-8">
+        <div class="card" style="width: responsive;">
+          <div class="card-body">
+            <p class="card-text">
+              <input type="button" value="Book Title" onclick="shortAnswer5()"></input>
+            </p>
           </div>
         </div>
 
-        <div class="col-sm-8">
-          <div class="card" style="width: responsive;">
-            <div class="card-body">
-              <p class="card-text">
-              <input type="button" value="Book Title" onclick="shortAnswer5()"></input>
-              </p>
-            </div>
-          </div>
-
-          <div class="card" style="width: responsive;">
-            <div class="card-body">
-              <h5 class="card-title"><b><u>Book Summary</u></b></h5>
-              <p class="card-text">
+        <div class="card" style="width: responsive;">
+          <div class="card-body">
+            <h5 class="card-title"><b><u>Book Summary</u></b></h5>
+            <p class="card-text">
               <p id="favSummary"></p>
               <input type="button" value="Submit Your Summary" onclick="shortAnswer2()"></input>
-              </p>
-            </div>
+            </p>
           </div>
+        </div>
 
-          <div class="card" style="width: responsive;">
-            <div class="card body">
-              <input id="imageURLInput" type="text" placeholder="Find an image URL">
-              <button type="button" onclick="updateImage();">Replace Image</button>
-            </div>
+        <div class="card" style="width: responsive;">
+          <div class="card body">
+            <input id="imageURLInput" type="text" placeholder="Find an image URL">
+            <button type="button" onclick="updateImage();">Replace Image</button>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-</br>
+  </br>
 
   <div class="container container-fluid margin-top">
     <div class="row">
       <div class="col-sm-3"></div>
       <div class="col-sm-6">
         <h3>Add Your Book Trailer</h3>
-       <iframe id="videoURL" width="560" height="315" src="https://www.youtube.com/embed/VcUApeCX4Gs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe id="videoURL" width="560" height="315" src="https://www.youtube.com/embed/VcUApeCX4Gs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <input id="videoURLInput" type="text" placeholder="Find an embed video URL">
         <button type="button" onclick="updateVideo();">Replace Video</button>
-        </div>
-        <div class="col-sm-3"></div>
       </div>
+      <div class="col-sm-3"></div>
     </div>
+  </div>
 
-    <div class="container container-fluid margin-top">
+  <div class="container container-fluid margin-top">
     <div class="row">
       <div class="col-sm-12">
         <a href="index.html" target="_blank"><button onclick()> Back to homepage</button></a>
@@ -82,8 +83,9 @@
   </div>
 
 
-     <script src="script.js"></script>
+  <script src="script.js"></script>
 
 
 </body>
+
 </html>

@@ -2,8 +2,7 @@
 
 Our final project...
 
-Repository: https://github.com/mgc2156/project1 
+Repository: <https://github.com/mgc2156/project1>
 
 Gannett's Video: URL
 Becca's Video: URL
-

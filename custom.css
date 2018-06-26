@@ -1,4 +1,3 @@
-
 body {
   background: #bafff8;
   font-family: Questrial;
@@ -26,8 +25,8 @@ body {
   border-width: 10px;
   border-top-left-radius: 100px;
   border-top-left-radius: 5px;
-  height:auto;
-  width:auto;
+  height: auto;
+  width: auto;
 }
 
 .img-bookmark {
@@ -38,7 +37,6 @@ body {
 
 .panel {
   margin-top: 20px;
-  
 }
 
 .radio-inline {
@@ -62,7 +60,7 @@ body {
   margin-left: 25.5rem;
 }
 
-.input-group{
+.input-group {
   padding: .5rem;
 }
 
