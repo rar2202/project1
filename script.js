@@ -74,7 +74,7 @@ function bookList() {
     for (i = 0; i < x.length; i++) {
         txt = txt + x.elements[i].value + "<br>";
     }
-    document.getElementById("favBooks").innerHTML = txt;
+    document.getElementById("favBooks").innerHTML = "My favorite books are '" + "\n" + txt;
 }
 
 /* Write your Own Summary Functions*/
@@ -123,7 +123,7 @@ function question4(e) {
   function name() {
     var nameText;
     let nameText = document.getElementById("nameInput").value;
-    document.getElementById("userName").innerHTML = "This is " + "\n"  + nameText + "'s" + "\n" + "bookmark'";
+    document.getElementById("userName").innerHTML = "This is " + "\n" + nameText + "'s" + "\n" + "bookmark'";
   }
 
 /*
