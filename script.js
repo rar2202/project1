@@ -124,9 +124,6 @@ function question4(e) {
   }
 
   function name() {
-    alert ("Hi");
-}
-
     var nametext;
     let nametext = document.getElementById("nameInput").value;
     document.getElementById("userName").innerHTML = "This is " + "\n"  + nametext + "'s" + "\n" + "bookmark'";
