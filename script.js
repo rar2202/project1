@@ -119,10 +119,10 @@ function submit() {
   alert(txt);
 }
 
-/*
+
   function color() {
     var txtcolor;
     inputEl = e.currentTarget;
     let txtcolor = inputEl.value;
-    document.getElementById("bookmarktxt").style.color = txtcolor;
+    document.getElementById("allBookmarkTxt").style.color = txtcolor;
   }
