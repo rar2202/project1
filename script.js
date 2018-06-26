@@ -73,7 +73,6 @@ function bookList() {
     var i;
     for (i = 0; i < x.length; i++) {
         txt = txt + x.elements[i].value + "<br>";
-				userResponses.otherBooks.push(x.elements[i].value);
     }
     document.getElementById("favBooks").innerHTML = txt;
 }
