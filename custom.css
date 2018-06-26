@@ -38,13 +38,7 @@ body {
 
 .panel {
   margin-top: 20px;
-}
-
-.card {
-  margin: 10px;
-  border-color: #effffd;
-  border-width: 3px;
-  border-radius: 25px;
+  
 }
 
 .radio-inline {
