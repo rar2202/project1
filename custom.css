@@ -64,7 +64,8 @@ body {
   left: 0;
   text-align: center;
   position: absolute;
-  margin: 14rem;
+  margin-top: 10rem;
+  margin-left: 13.5rem;
 }
 
 .input-group{
