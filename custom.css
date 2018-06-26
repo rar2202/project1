@@ -71,3 +71,15 @@ body {
 .input-group{
   padding: .5rem;
 }
+
+#radio1 {
+  color: #f2f2f2;
+}
+
+#favQuote {
+  color: #e6e6e6;
+}
+
+#favBooks {
+  color: #d9d9d9;
+}
