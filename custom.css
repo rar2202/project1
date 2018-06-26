@@ -1,4 +1,3 @@
-
 body {
   background: #bafff8;
   font-family: Questrial;
@@ -26,8 +25,8 @@ body {
   border-width: 10px;
   border-top-left-radius: 100px;
   border-top-left-radius: 5px;
-  height:auto;
-  width:auto;
+  height: auto;
+  width: auto;
 }
 
 .img-bookmark {
@@ -36,19 +35,12 @@ body {
   width: 35rem;
 }
 
-.panel {
-  margin-top: 20px;
-}
-
-.card {
-  margin: 10px;
-  border-color: #effffd;
-  border-width: 3px;
-  border-radius: 25px;
-}
-
 .radio-inline {
   padding-left: 10px;
+}
+
+.q3txt {
+  padding-left: 5px;
 }
 
 .bookmarktxt {
@@ -60,9 +52,22 @@ body {
   left: 0;
   text-align: center;
   position: absolute;
-  margin: 6rem;
+  margin-top: 8rem;
+  margin-left: 25.5rem;
 }
 
-.input-group{
+.input-group {
   padding: .5rem;
+}
+
+#radio1 {
+  color: #ffffcc;
+}
+
+#favQuote {
+  color: #e6f7ff;
+}
+
+#favBooks {
+  color: #d9d9d9;
 }
