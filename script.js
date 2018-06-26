@@ -120,12 +120,6 @@ function question4(e) {
     alert(txt);
   }
 
-  function name() {
-    var nameText;
-    let nameText = document.getElementById("nameInput").value;
-    document.getElementById("userName").innerHTML = "This is " + "\n" + nameText + "'s" + "\n" + "bookmark'";
-  }
-
 /*
   function color() {
     var txtcolor;
@@ -133,11 +127,3 @@ function question4(e) {
     let txtcolor = inputEl.value;
     document.getElementById("bookmarktxt").style.color = txtcolor;
   }
-
-/* Color Picker at
-  $(".basic").spectrum({
-      color: "#f00",
-      change(function () {
-    var color = $(this).val()
-    $('#selectBox').css('color', color);
-});*/
