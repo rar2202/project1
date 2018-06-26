@@ -105,8 +105,7 @@ function question4(e) {
   }
 }
 
-
-/* Submit Bookmark and Name*/
+/* Submit Bookmark*/
 function submit() {
   var txt;
   var confirm = document.getElementById("confirmTerms").checked;
@@ -118,7 +117,6 @@ function submit() {
   }
   alert(txt);
 }
-
 
   function color() {
     var txtcolor;
