@@ -118,7 +118,7 @@ function submit() {
   alert(txt);
 }
 
-  function color() {
+function color() {
     var txtcolor;
     inputEl = e.currentTarget;
     let txtcolor = inputEl.value;
