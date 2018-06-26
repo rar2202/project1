@@ -74,7 +74,7 @@ function bookList() {
     for (i = 0; i < x.length; i++) {
         txt = txt + x.elements[i].value + "<br>";
     }
-    document.getElementById("favBooks").innerHTML = "My favorite books are '" + "\n" + txt;
+    document.getElementById("favBooks").innerHTML = "I highly recommend " + "\n" + txt;
 }
 
 /* Write your Own Summary Functions*/
