@@ -113,7 +113,7 @@ function question4(e) {
 /* Submit Bookmark and Name*/
   function submit() {
     var txt;
-    var confirm = document.getElementById("confirmWork").checked;
+    var confirm = document.getElementById("confirmTerms").checked;
     if (confirm == true) {
       txt = "Your bookmark is ready!";
     } else {
@@ -128,7 +128,7 @@ function question4(e) {
     let name = document.getElementById("nameInput").value;
     document.getElementById("userName").innerHTML = "This is " + "\n"  + name + "'s" + "\n" + "bookmark'";
   }
-  
+
 /*
   function color() {
     var txtcolor;
