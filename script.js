@@ -118,9 +118,9 @@ function submit() {
   alert(txt);
 }
 
-function color() {
+/*function color() {
     var txtcolor;
     inputEl = e.currentTarget;
     let txtcolor = inputEl.value;
     document.getElementById("allBookmarkTxt").style.color = txtcolor;
-  }
+  }*/
