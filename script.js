@@ -122,9 +122,9 @@ function question4(e) {
   }
 
   function name() {
-    var nametext;
-    let nametext = document.getElementById("nameInput").value;
-    document.getElementById("userName").innerHTML = "This is " + "\n"  + nametext + "'s" + "\n" + "bookmark'";
+    var nameText;
+    let nameText = document.getElementById("nameInput").value;
+    document.getElementById("userName").innerHTML = "This is " + "\n"  + nameText + "'s" + "\n" + "bookmark'";
   }
 
 /*
