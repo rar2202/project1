@@ -4,10 +4,8 @@ Our final project contains a 5-page website focused on "summer reading".  On the
 
 Repository: <https://github.com/mgc2156/project1>
 
-Gannett's Video: URL
+Gannett's Video: <https://youtu.be/iQCJx-cyLYE>
 
 Becca's Video: <https://youtu.be/SXTvUSsi27c>
 
-
-
-
+View the live page at https://mgc2156.github.io/project1/
